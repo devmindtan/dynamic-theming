@@ -4,7 +4,7 @@ A runtime theming system for React that transforms the entire UI by injecting CS
 
 # Live demo
 
-Link: [Demo](dynamic-theming.vercel.app)
+Link: [Demo](dynamic-theming-devmindtan.vercel.app)
 
 ## What This Project Is About
 
