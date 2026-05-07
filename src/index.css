@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--theme-typography-fontFamily, system-ui, sans-serif);
+  font-size: var(--theme-typography-fontSizeBase, 16px);
+  line-height: var(--theme-typography-lineHeight, 1.5);
+  color: var(--theme-colors-text, #1a1a1a);
+  background-color: var(--theme-colors-bg, #ffffff);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--theme-colors-primary, #3b82f6);
+  color: var(--theme-colors-bg, #ffffff);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-colors-bgSecondary, #f5f5f5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-colors-border, #e0e0e0);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-colors-textMuted, #999);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--theme-colors-textMuted, #999);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
