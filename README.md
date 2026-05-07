@@ -2,6 +2,10 @@
 
 A runtime theming system for React that transforms the entire UI by injecting CSS custom properties from a JSON config. Switch themes instantly, create your own, or import from a file -- no rebuild, no page reload.
 
+# Live demo
+
+Link: [Demo](dynamic-theming.vercel.app)
+
 ## What This Project Is About
 
 The core feature of this project is the **Dynamic Theme Engine**. The e-commerce UI exists solely as a testbed to demonstrate how the theme system works in a real interface with diverse components (cards, sidebars, modals, forms, navigation).
